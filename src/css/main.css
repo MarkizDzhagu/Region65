@@ -215,6 +215,15 @@
     max-height: 564px;
 }
 
+.slider-left {
+    flex-shrink: 1;
+}
+
+.slider-right {
+    flex-shrink: 3;
+    
+}
+
 .swiper-pagination {
     position: absolute;
     top: 0;
@@ -261,6 +270,7 @@
 .equipment-image {
     vertical-align: bottom;
     height: 564px;
+    width: 100%;
 }
 
 .equipment__subtitle {
@@ -407,4 +417,65 @@
     text-decoration: none;
     display: block;
     max-width: 300px;
+}
+
+
+@media (max-width: 1330px) {
+    .equipment-image {
+        vertical-align: bottom;
+        width: 100%;
+        justify-content:end;
+    }
+    
+
+    .hero-top {
+        margin-top: 40px;
+    }
+
+    .hero__button {
+        margin-right: 20px;
+        font-size: 12px;
+    }
+
+    .hero__title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .hero-bottom__text {
+        font-size: 14px;
+    }
+
+    .truck-rent .container {
+        grid-template-columns: 300px 1fr;
+        padding: 50px 70px 50px 20px;
+    }
+    .rent__title {
+        padding-left: 50px;
+    }
+
+    .equipment__title {
+        font-size: 22px;
+        margin-top: 50px;
+    }
+
+    .equipment-slider__buttons {
+        margin-left: 70px;
+    }
+
+    .equipment__button {
+        font-size: 16px;
+    }
+
+    .equipment__text {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 75px;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+
 }
