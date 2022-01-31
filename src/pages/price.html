@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регион 65</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <%= require('html-loader!./header.html').default %>
+        <main class="container">
+            <h2 class="price__title">Аренда спецтехники</h2>
+            <section class="price__body">
+                <div class="price__element"><a href="./price__excavator.html">
+                        <img class="price__img" src="../img/price__excavator.png">
+                        <h3 class="price__subtitle">Экскаваторы</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__yamobur.html">
+                        <img class="price__img" src="../img/price__drill.png">
+                        <h3 class="price__subtitle">Ямобуры</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__buldozer.html">
+                        <img class="price__img" src="../img/price__bulldozer.png">
+                        <h3 class="price__subtitle">Бульдозеры</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__katok.html">
+                        <img class="price__img" src="../img/price__katok.png">
+                        <h3 class="price__subtitle">Вибрационные катки</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__avtokran.html">
+                        <img class="price__img" src="../img/price__crane.png">
+                        <h3 class="price__subtitle">Автокраны</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__betononasos.html">
+                        <img class="price__img" src="../img/price__betonosos.png">
+                        <h3 class="price__subtitle">Автобетонососы</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__mixer.html">
+                        <img class="price__img" src="../img/price__mixer.png">
+                        <h3 class="price__subtitle">Автобетоносмесители</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__ilosos.html">
+                        <img class="price__img" src="../img/price__ilosos.png">
+                        <h3 class="price__subtitle">Илососы</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__samosval.html">
+                        <img class="price__img" src="../img/price__samosval.png">
+                        <h3 class="price__subtitle">Самосвалы</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__pogruzchik.html">
+                        <img class="price__img" src="../img/price__pogruzchik.png">
+                        <h3 class="price__subtitle">Погрузчики</h3>
+                    </a>
+                </div>
+                <div class="price__element"><a href="./price__tyagach.html">
+                        <img class="price__img" src="../img/price__tyagach.png">
+                        <h3 class="price__subtitle">Тягачи седельные</h3>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <%= require('html-loader!./footer.html').default %>
+            <%= require('html-loader!./popup.html').default %>
+</body>
+
+</html>

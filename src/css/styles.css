@@ -1,0 +1,38 @@
+/*-------------------------Global styles----------------------*/
+
+body {
+    background-color: fff;
+    margin: 0;
+    padding: 0;
+}
+
+img, h1, h2, h3, h4, h5, h6, p, span, button {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1600px;
+    padding: 0 70px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "CircleLight"; 
+    src: url(/fonts/Circe-Light.woff); 
+    font-style: normal; 
+    font-weight: light; 
+    }
+
+@font-face {
+    font-family: "CircleExtraBold"; 
+    src: url(/fonts/Circe-ExtraBold.woff); 
+    font-style: normal; 
+    font-weight: light; 
+    }

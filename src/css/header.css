@@ -1,0 +1,78 @@
+/*-------------------------Header styles--------------------*/
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__element{
+    margin-right: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.header__element a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s all ease-in-out;
+}
+
+.header__element a:hover {
+    border-bottom: 1px solid #E36931;
+    color: #E36931;
+}
+
+.header__request {
+    position: relative;
+}
+
+.request__button {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+
+.request__button:hover {
+    color: #E36931;
+}
+
+.request__image{
+    position: absolute;
+    top: 25%;
+    right: -20px;
+}
+
+.header__contacts {
+    display: flex;
+    gap: 7px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.header__contacts a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s all ease-in-out;
+}
+
+.header__contacts a:hover {
+    color: #E36931;
+}
+
+.header__search {
+    margin-left: 55px;
+}

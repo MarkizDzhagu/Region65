@@ -1,0 +1,89 @@
+
+/*-------------------------Footer styles--------------------*/
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer__list {
+    grid-column: 2 / 9;
+    display: flex;
+}
+
+.footer__element {
+    margin-right: 40px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer__element a {
+    text-decoration: none;
+    color: #1C2E38;
+    transition: 0.2s all ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.footer__element a:hover {
+    color: #E36931;
+    border-bottom: 1px solid #E36931;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer__link {
+    margin-right: 25px;
+}
+
+.footer__link:last-of-type {
+    margin-right: 0;
+}
+
+.footer__contacts {
+    display: flex;
+    grid-column: 10 / 11;
+    margin-left: auto;
+}
+
+.footer-tel {
+    grid-column: 11 / 13;
+    margin: 0 auto;
+}
+
+.tel {
+    color:#1C2E38;
+    font-weight: 600;
+}
+
+.footer-bot {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+
+.copyright {
+    grid-column: 1 / 4;
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #1C2E38;
+}
+
+.ittrent {
+    grid-column: 6 / 9;
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.itttrent__logo {
+    font-weight: 600;
+    color: #E36931;
+    text-decoration: none;
+}

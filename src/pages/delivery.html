@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регион 65</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <%= require('html-loader!./header.html').default %>
+        <main>
+            <section class="container delivery">
+                <img src="../img/delivery__img.jpg">
+                <div class="delivery__body">
+                    <h2 class="company__title">Вся дорожная техника предоставляется в аренду в
+                        г. Южно-Сахалинск и по всей
+                        территории о. Сахалин. При необходимости организуется подача машин на площадку заказчика вне
+                        зависимости
+                        от удаленности объекта, типа спецтехники и условий подъезда. </h2>
+                    <div class="delivery__mid">
+                        <div class="delivery__element">
+                            <p class="delivery__text delivery__text1">
+                                Не вся спецтехника способна сама добраться до места назначения, если машина на
+                                гусеничном
+                                ходу, имеет низкую скорость, большие габариты, то ее транспортировка возможна только на
+                                специальной платформе.
+                            </p>
+                            <span>01</span>
+                        </div>
+                        <div class="delivery__element">
+                            <span>02</span>
+                            <p class="delivery__text delivery__text2">
+                                Мы предлагаем услугу по доставке спецтехники с помощью тралов грузоподъемностью до 45
+                                тонн.
+                                Низкая рама позволяет быстро провести погрузку и выгрузку машин, хорошая манёвренность
+                                дает
+                                возможность легко передвигаться по дорогам. Опытные водители произведут перевозку быстро
+                                и
+                                аккуратно, все машины доставляются готовыми к эксплуатации своевременно.
+                            </p>
+                        </div>
+                        <div class="delivery__element">
+                            <p class="delivery__text delivery__text3">
+                                Стоимость транспортировки рассчитывается индивидуально. Перевозка осуществляется до
+                                места
+                                назначения и обратно. Итоговая цена формируется на основании нескольких факторов:
+                                расстояния, габаритов, веса машины, необходимости дополнительного сопровождения,
+                                характеристики груза и тарификации.
+                            </p>
+                            <span>03</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <%= require('html-loader!./footer.html').default %>
+            <%= require('html-loader!./popup.html').default %>
+</body>
+
+</html>

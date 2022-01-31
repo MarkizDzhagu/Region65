@@ -1,0 +1,157 @@
+
+/*----------------------------- Shop page ----------------------*/
+
+.shop__title {
+    font-family: 'Open Sans';
+    font-size: 35px;
+    line-height: 150%;
+    font-weight: normal;
+    text-align: center;
+    margin: 70px 0;
+}
+
+.shop__section {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 38px;
+}
+
+.shop__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.shop__aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop__link {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 150%;
+    color: #1C2E38;
+    font-weight: 300;
+    margin-bottom: 15px;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+}
+
+.shop__link:hover{
+    border-bottom: 1px solid #E36931;
+    color: #E36931;
+}
+
+.shop__link-title:hover {
+    border: 1px solid transparent;
+    color: #1C2E38;
+}
+
+.shop__link-all {
+    color: #E36931;
+    font-weight: 600;
+}
+
+.shop__link-title {
+    font-weight: 600;
+    margin-top: 15px;
+    border: 1px solid transparent;
+}
+
+.shop__element {
+    display: flex;
+    flex-direction: column;
+}
+
+.element__spec {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.element__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.element__link {
+    font-family: 'Open Sans';
+    color: #1C2E38;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    transition: 0.3s all ease-in-out;
+    border-bottom: 0.5px solid #1C2E38;
+}
+
+.element__link:hover {
+    color: #E36931;
+    fill: #E36931;
+    border-color: #E36931;
+}
+
+.element__link svg {
+    margin-left: 7px;
+}
+
+.element__spec-body {
+    width: 100%;
+}
+
+.element__spec-title {
+    font-family: "CircleLight";
+    font-size: 22px;
+    line-height: 150%;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.element__spec-description {
+    font-family: 'CircleLight';
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 27px;
+}
+
+.element__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #DFDFDF;
+    padding: 10px 0;
+}
+
+.element__row:first-of-type {
+    border-top: 0.5px solid #DFDFDF;
+}
+
+.row__title {
+    font-family: "CircleLight";
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.row__value {
+    font-family: "CircleLight";
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: bold;
+    text-align: end;
+}
+
+.element__text{
+    font-family: "CircleLight";
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: normal;
+    margin-top: 10px;
+}
