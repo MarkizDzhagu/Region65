@@ -76,3 +76,22 @@
 .header__search {
     margin-left: 55px;
 }
+
+@media (max-width: 1330px) {
+    .header__search {
+        display: none;
+        margin-left: 0;
+    }
+
+    .header .container {
+        padding-right: 10px;
+    }
+
+    .header__element{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+}

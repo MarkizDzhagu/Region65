@@ -87,3 +87,22 @@
     color: #E36931;
     text-decoration: none;
 }
+
+@media (max-width: 1330px) {
+    .footer__icons {
+        display: none;
+    }
+
+    .footer__element {
+        margin-right: 20px;
+    }
+
+    .footer__list {
+        grid-column: 2 / 10;
+    }
+
+    .footer .container {
+        padding-right: 10px;
+    }
+
+}
