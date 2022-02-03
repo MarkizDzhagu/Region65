@@ -106,3 +106,25 @@
     }
 
 }
+
+@media (max-width: 1024px){
+    .footer-tel, .footer__contacts {
+        display: none;
+    }
+    .footer-top, .footer-bot {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px){
+    .footer__list{
+        display: none;
+    }
+    .footer-bot {
+        flex-direction: column;
+    }
+    .footer-top {
+        justify-content: center;
+    }
+}

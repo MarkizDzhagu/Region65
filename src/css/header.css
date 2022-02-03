@@ -30,6 +30,10 @@
     color: #E36931;
 }
 
+.toggle-sidebar {
+    display: none;
+}
+
 .header__request {
     position: relative;
 }
@@ -93,5 +97,133 @@
 }
 
 @media (max-width: 1024px) {
+    .header__request, .header__contacts {
+        display: none;
+    }
+    .header .container {
+        justify-content:start;
+    }
 
+    .header__list {
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .header .container {
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .header__element {
+        margin-right: 10px;
+    }
+    .header__list {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 553px) {
+    .header .container {
+        padding: 20px;
+    }
+    .header__list {
+        position: fixed;
+        top: 0;
+        left: -150%;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        padding-top: 20px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        overflow: auto;
+        transition: all 0.2s ease-in;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    .header__list._active {
+        left: 0;
+        z-index: 9;
+    }
+
+    .header__element {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .toggle-sidebar {
+        display: block;
+        width: 33px;
+        height: 33px;
+        align-self: flex-start;
+        justify-self: flex-end;
+        margin-top: 10px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        z-index: 50;
+    }
+
+    .menu-icon-wrapper {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+    }
+
+    .menu-icon {
+        position: relative;
+        width: 30px;
+        height: 5px;
+        background-color: black;
+    }
+
+    .menu-icon::before {
+        position: absolute;
+        left: 0;
+        top: -10px;
+        content: '';
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    .menu-icon::after {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: '';
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    .menu-icon.menu-icon-active {
+        background-color: transparent;
+    }
+
+    .menu-icon.menu-icon-active::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in;
+        background-color: gray;
+    }
+
+    .menu-icon.menu-icon-active::after {
+        transform: rotate(-45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in;
+        background-color: gray;
+    }
+
+    body._lock {
+        overflow: hidden;
+    } 
 }

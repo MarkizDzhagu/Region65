@@ -32,3 +32,9 @@ distance.style.paddingLeft = containerDistance + 'px';
 document.querySelector('.header__search').onclick = function () {
     document.querySelector('.header__search').classList.toggle('AZAZA');
 }
+
+document.querySelector('.menu-icon-wrapper').onclick = function () {
+    document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+    document.querySelector('.header__list').classList.toggle('_active');
+    document.body.classList.toggle('_lock');
+}
