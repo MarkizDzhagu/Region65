@@ -20,6 +20,7 @@
 
 .delivery__body {
     max-width: 1040px;
+    min-width: 400px;
 }
 
 .delivery__element {
@@ -61,6 +62,7 @@
     align-items: center;
     width: 46px;
     height: 46px;
+    min-width: 46px;
     justify-content: center;
     background-color: #E36931;
     border-radius: 50%;
@@ -68,4 +70,47 @@
     font-size: 16px;
     font-weight: 400;
     color: white;
+}
+
+@media (max-width: 1440px) {
+    .delivery {
+      margin-top: 20px;
+      padding-right: 40px;
+    }
+
+    .delivery .company__title {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .delivery__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .delivery img {
+        min-width: 100px;
+        object-fit: contain;
+        margin-bottom: auto;
+    }
+    .delivery .company__title {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .delivery__text {
+        font-size: 12px;
+    }
+
+    .delivery__element {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .delivery img {
+        display: none;
+    }
+    .delivery {
+        padding: 0 10px;
+    }
 }

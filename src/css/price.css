@@ -24,6 +24,10 @@
     align-self: flex-end;
 }
 
+.price__img {
+    max-width: 100%;
+}
+
 .price__element a:hover > .price__subtitle {
     color: #E36931;
 }
@@ -69,4 +73,37 @@
 .element__row--priced {
     border-color: #E36931;
     border-top: 0.5px solid #E36931;
+}
+
+@media (max-width: 1024px){
+    .price__body{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:max-content;
+    }
+}
+
+@media (max-width: 768px){
+    .price__container {
+        padding: 0 20px;
+    }
+
+    .price__body{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:max-content;
+    }
+}
+@media (max-width: 425px){
+    .price__container {
+        padding: 0;
+    }
+    .price__body{
+        grid-template-columns: 1fr;
+        grid-template-rows:max-content;
+    }
+    .price__element {
+        text-align: center;
+    }
+    .price__img {
+        max-width: 100%;
+    }
 }

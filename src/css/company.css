@@ -39,6 +39,7 @@
     margin: 0 auto;
     position: relative;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .company__rent {
@@ -68,8 +69,8 @@
 
 .company__mid-img {
     position: absolute;
-    right: -8%;
-    top: -50%;
+    right: -100px;
+    top: -40%;
 }
 
 .company__bot {
@@ -101,4 +102,76 @@
 
 .company__bot-element svg {
     margin-right: 10px;
+}
+
+@media (max-width: 1344px) {
+    .company__top {
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .company__type {
+        margin-right: 10px;
+    }
+    .company__type svg {
+        margin-left: 4px;
+    }
+    .company__mid-img {
+        top: 0;
+        right: -70px;
+        width: 50%;
+    }
+    .company__title {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .company__rent {
+        padding-left: 10px;
+    }
+
+    .company__rent-text {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 1024px){
+    .company__title {
+        font-size: 24px;
+    }
+    .company__top {
+        flex-direction: column;
+    }
+    .company__container {
+        padding: 20px;
+    }
+    .company__type {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 425px){
+    .company__title {
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .company__top {
+        margin-bottom: 0;
+    }
+
+    .company__rent-title{
+        margin-top: 10px;
+    }
+
+    .company__mid {
+        margin-bottom: 10px;
+    }
+    .company__bot-element:not(:last-of-type) {
+        margin-right: 0;
+    }
+    .company__mid-img {
+        top: 50px;
+        right: -70px;
+        width: 50%;
+    }
 }

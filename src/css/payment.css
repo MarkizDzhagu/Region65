@@ -32,3 +32,25 @@
     margin-bottom: 70px;
     max-width: 1120px;
 }
+
+@media (max-width: 1024px){
+    .payment__container {
+        padding: 0 40px;
+    }
+
+    .company__title {
+        font-size: 16px;
+    }
+
+    .payment__mid {
+        justify-content: space-between;
+    }
+    .payment__element {
+        margin-bottom: 40px;
+        margin-right: 0;
+        font-size: 16px;
+    }
+    .payment__bot {
+        font-size: 16px;
+    }
+}

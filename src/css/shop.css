@@ -155,3 +155,55 @@
     font-weight: normal;
     margin-top: 10px;
 }
+
+@media (max-width: 1280px){
+    .shop__section {
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+    }
+    
+    .shop__body {
+        gap: 10px;
+    }
+
+    .element__img {
+        margin-right: 10px;
+    }
+
+    .element__img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px){
+    .shop__body {
+        grid-template-columns: 1fr;
+    }
+
+    .element__img {
+        margin-right: 20px;
+    }
+
+    .element__spec {
+        margin-bottom: 10px;
+    }
+
+    .shop__element {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .shop__container {
+        padding: 0 20px;
+    }
+
+    .element__spec {
+        flex-direction: column-reverse;
+    }
+
+    .element__img img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}

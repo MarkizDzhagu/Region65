@@ -38,3 +38,5 @@ document.querySelector('.menu-icon-wrapper').onclick = function () {
     document.querySelector('.header__list').classList.toggle('_active');
     document.body.classList.toggle('_lock');
 }
+
+console.log('Hello')
