@@ -188,6 +188,7 @@
 .equipment-rent {
     min-height: 564px;
     background-color: #E36931;
+    overflow: hidden;
 }
 
 .equipment__title {
@@ -221,7 +222,6 @@
 
 .slider-right {
     flex-shrink: 3;
-    
 }
 
 .swiper-pagination {
@@ -417,6 +417,12 @@
     text-decoration: none;
     display: block;
     max-width: 300px;
+}
+
+.contacts-map {
+    max-width: 800px;
+    max-height: 800px;
+    min-height: 400px;
 }
 
 
