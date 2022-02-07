@@ -160,6 +160,14 @@ module.exports = {
                 }
             ]
         }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'src/docs'),
+                    to: path.resolve(__dirname, 'app/docs')
+                }
+            ]
+        }),
         new MiniCssExtractPlugin({
             filename: './css/styles.css'
         }),
